@@ -96,7 +96,7 @@
 #### Связь с сервером
 - [NswagStudio](https://github.com/RicoSuter/NSwag/releases/tag/v14.1.0) для генерации клиента на typescript (берем 14.1.0, т.к. в последующих нет поддержки .NET 6);
   Для генерации используем конфигу `TestsManager.nswag`. Складываем в отдельный `.ts` файл, например назовем его `GeneratedClient.ts`.
-- [axios](https://axios-http.com/ru/docs/intro) для создания axios instance, в которой указывается адрес сервера;
+- [axios](https://axios-http.com/ru/docs/intro) для создания axios instance, необходимой для создания экземпляров клиентов из `GeneratedClient.ts`;
   ```typescript
   // Пример
   
